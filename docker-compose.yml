@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  myappapi:
+    image: mash404/my-app-api-image
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
